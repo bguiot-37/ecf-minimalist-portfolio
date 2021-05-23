@@ -1,0 +1,125 @@
+/* *************************************** */
+/* ************** PORTFOLIO ************** */
+/* *************************************** */
+
+/* MAIN */
+
+.cards-list {
+  display: grid;
+  gap: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+}
+
+.cards-item {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.cards-item figure {
+  width: 50%;
+}
+
+.cards-item img {
+  width: 100%;
+}
+
+.cards-item-content {
+  padding: 6rem 10rem;
+  width: 50%;
+  position: relative;
+}
+
+.cards-item-content h2 {
+  margin: 4rem 0 2.5rem 0;
+}
+
+.cards-item-content p {
+  margin-bottom: 4rem;
+}
+
+.cards-item-content p::before {
+  content: "";
+  height: 1px;
+  background-color: rgba(51, 50, 62, 0.15);
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  right: 10rem;
+}
+
+.cards-item-content p::after {
+  content: "";
+  height: 1px;
+  background-color: rgba(51, 50, 62, 0.15);
+  position: absolute;
+  bottom: 0;
+  left: 10rem;
+  right: 10rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+  .cards-list {
+    gap: 4rem;
+    padding: 0;
+  }
+  .cards-item {
+    display: flex;
+    margin: 0;
+  }
+  .cards-item figure {
+    width: 50%;
+    margin: 8% 0;
+  }
+  .cards-item img {
+    width: 100%;
+  }
+  .cards-item-content {
+    width: 50%;
+    padding: 8% 0 8% 6%;
+  }
+  .cards-item-content:nth-child(odd) {
+    padding: 6rem 6rem 6rem 0rem;
+  }
+  .cards-item-content h2 {
+    margin: 0 0 2rem 0;
+  }
+  .cards-item-content p {
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .cards-item {
+    flex-direction: column;
+  }
+  .cards-item:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .cards-item figure {
+    width: 100%;
+    margin: 8% 0;
+  }
+  .cards-item img {
+    width: 100%;
+  }
+  .cards-item-content {
+    width: 100%;
+    padding: 10% 0;
+    border-top: 1px solid rgba(51, 50, 62, 0.15);
+    border-bottom: 1px solid rgba(51, 50, 62, 0.15);
+  }
+  .cards-item-content p::before {
+    content: none;
+  }
+  .cards-item-content p::after {
+    content: none;
+  }
+  .cards-item-content:nth-child(odd) {
+    padding: 3rem 0rem 4rem 0rem;
+  }
+  .cards-item-content:nth-child(even) {
+    padding-bottom: 4rem;
+  }
+}

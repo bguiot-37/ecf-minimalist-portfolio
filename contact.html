@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Karla:wght@700&family=Public+Sans:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="./css/style-base.css" />
+    <link rel="stylesheet" href="./css/style-contact.css" />
+  </head>
+  <body>
+    <header id="this-section">
+      <div class="container">
+        <div class="header-navigation">
+          <div class="logo">
+            <figure>
+              <img src="./img/Home/Combined-Shape.svg" alt="Logo" />
+            </figure>
+          </div>
+          <nav>
+            <!-- menu burger responsive -->
+            <label for="check-burger" id="label-burger"></label>
+            <input type="checkbox" id="check-burger" name="check-burger" />
+            <ul class="menu-list">
+              <li class="item-list"><a href="./index.html">Home</a></li>
+              <li class="item-list">
+                <a href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="item-list active">
+                <a href="./contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="content-section">
+          <article>
+            <h2>Get in Touch</h2>
+            <div class="content-article">
+              <p class="p1">
+                I’d love to hear about what you’re working on and how I could
+                help. I’m currently looking for a new role and am open to a wide
+                range of opportunities. My preference would be to find a
+                position in a company in London. But I’m also happy to hear
+                about opportunites that don’t fit that description. I’m a
+                hard-working and positive person who will always approach each
+                task with a sense of purpose and attention to detail. Please do
+                feel free to check out my online profiles below and get in touch
+                using the form.
+              </p>
+              <div class="social-networks">
+                <a href="https://github.com/" target="_blank">
+                  <img
+                    src="./img/Contact-Me/Path.svg"
+                    alt="Lien GitHub perso"
+                  />
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <img
+                    src="./img/Contact-Me/Path-1.svg"
+                    alt="Lien Twitter perso"
+                  />
+                </a>
+                <a href="https://fr.linkedin.com/" target="_blank">
+                  <img
+                    src="./img/Contact-Me/Shape.svg"
+                    alt="Lien Linkedin perso"
+                  />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <h2>Contact Me</h2>
+            <div class="content-article">
+              <form action="#" method="post" id="ContactForm">
+                <div class="name">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Jane Appleseed"
+                    required
+                  />
+                  <span id="name-invalid"></span>
+                </div>
+                <div class="email">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="email@example.com"
+                    required
+                  />
+                  <span id="email-invalid"></span>
+                </div>
+                <div class="message">
+                  <label for="message">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="How can I help?"
+                    required
+                  ></textarea>
+                  <span id="message-invalid"></span>
+                </div>
+                <div class="btn">
+                  <button type="submit" id="btn-valid">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <figure>
+            <img src="./img/Home/Combined-Shape-2.svg" alt="Logo" />
+          </figure>
+        </div>
+        <ul class="footer-menu-list">
+          <li class="footer-item-list"><a href="./index.html">Home</a></li>
+          <li class="footer-item-list">
+            <a href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="footer-item-list">
+            <a href="./contact.html">Contact Me</a>
+          </li>
+        </ul>
+        <div class="social-networks">
+          <a href="https://github.com/" target="_blank">
+            <img src="./img/Home/Path.svg" alt="Link GitHub" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="./img/Home/Path-1.svg" alt="Link Twitter" />
+          </a>
+          <a href="https://fr.linkedin.com/" target="_blank">
+            <img src="./img/Home/Shape.svg" alt="Link Linkedin" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

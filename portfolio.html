@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Karla:wght@700&family=Public+Sans:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="./css/style-base.css" />
+    <link rel="stylesheet" href="./css/style-portfolio.css" />
+  </head>
+  <body>
+    <header id="this-section">
+      <div class="container">
+        <div class="header-navigation">
+          <div class="logo">
+            <figure>
+              <img src="./img/Home/Combined-Shape.svg" alt="Logo" />
+            </figure>
+          </div>
+          <nav>
+            <!-- menu burger responsive -->
+            <label for="check-burger" id="label-burger"></label>
+            <input type="checkbox" id="check-burger" name="check-burger" />
+            <ul class="menu-list">
+              <li class="item-list"><a href="./index.html">Home</a></li>
+              <li class="item-list active">
+                <a href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="item-list">
+                <a href="./contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="content-section">
+          <ul class="cards-list">
+            <li class="cards-item">
+              <figure>
+                <img
+                  src="./img/Portfolio/Bitmap.png"
+                  srcset="./img/Portfolio/Bitmap@2x.png 2x"
+                  alt="Manage illustration"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="cards-item-content">
+                <h2>Manage</h2>
+                <p class="p1">
+                  This project required me to build a fully responsive landing
+                  page to the designs provided. I used HTML5, along with CSS
+                  Grid and JavaScript for the areas that required interactivity,
+                  such as the testimonial slider.
+                </p>
+                <a href="./manage.html" class="btn-secondary">View project</a>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-item-content">
+                <h2>Bookmark</h2>
+                <p class="p1">
+                  This project required me to build a fully responsive landing
+                  page to the designs provided. I used HTML5, along with CSS
+                  Grid and JavaScript for the areas that required interactivity,
+                  such as the features section.
+                </p>
+                <a href="./bookmark.html" class="btn-secondary">View project</a>
+              </div>
+              <figure>
+                <img
+                  src="./img/Portfolio/Bitmap-bookmark.png"
+                  alt="Bookmark illustration"
+                  loading="lazy"
+                />
+              </figure>
+            </li>
+            <li class="cards-item">
+              <figure>
+                <img
+                  src="./img/Portfolio/Bitmap-1.png"
+                  srcset="./img/Portfolio/Bitmap-1@2x.png 2x"
+                  alt="Insure illustration"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="cards-item-content">
+                <h2>Insure</h2>
+                <p class="p1">
+                  This was a small project which mostly consisted of HTML and
+                  CSS. I built a fully-responsive landing page. The only
+                  JavaScript this project required was to enable the toggling of
+                  the mobile navigation.
+                </p>
+                <a href="./insure.html" class="btn-secondary">View project</a>
+              </div>
+            </li>
+            <li class="cards-item">
+              <div class="cards-item-content">
+                <h2>Fylo</h2>
+                <p class="p1">
+                  This project was built in pure HTML and CSS. I had mobile and
+                  desktop designs to work to and built it so that it was
+                  fully-responsive. I took a mobile-first approach and used
+                  modern CSS like Flexbox and Grid for layout purposes.
+                </p>
+                <a href="./fylo.html" class="btn-secondary">View project</a>
+              </div>
+              <figure>
+                <img
+                  src="./img/Portfolio/Bitmap-2.png"
+                  srcset="./img/Portfolio/Bitmap-2@2x.png 2x"
+                  alt="Fylo illustration"
+                  loading="lazy"
+                />
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <section class="contact-section" id="contact-section">
+          <h2>
+            Interested in doing<br />
+            a project together?
+          </h2>
+          <a href="./contact.html" class="btn-secondary">Contact me</a>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <figure>
+            <img src="./img/Home/Combined-Shape-2.svg" alt="Logo" />
+          </figure>
+        </div>
+        <ul class="footer-menu-list">
+          <li class="footer-item-list"><a href="./index.html">Home</a></li>
+          <li class="footer-item-list">
+            <a href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="footer-item-list">
+            <a href="./contact.html">Contact Me</a>
+          </li>
+        </ul>
+        <div class="social-networks">
+          <a href="https://github.com/" target="_blank">
+            <img src="./img/Home/Path.svg" alt="Link GitHub" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="./img/Home/Path-1.svg" alt="Link Twitter" />
+          </a>
+          <a href="https://fr.linkedin.com/" target="_blank">
+            <img src="./img/Home/Shape.svg" alt="Link Linkedin" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

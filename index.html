@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimalist Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Karla:wght@700&family=Public+Sans:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="./css/style-base.css" />
+    <link rel="stylesheet" href="./css/style-home.css" />
+  </head>
+  <body>
+    <header id="home">
+      <div class="container">
+        <div class="header-navigation">
+          <div class="logo">
+            <figure>
+              <img src="./img/Home/Combined-Shape.svg" alt="Logo" />
+            </figure>
+          </div>
+          <nav>
+            <!-- menu burger responsive -->
+            <label for="check-burger" id="label-burger"></label>
+            <input type="checkbox" id="check-burger" name="check-burger" />
+            <ul class="menu-list">
+              <li class="item-list active"><a href="#home">Home</a></li>
+              <li class="item-list"><a href="#about-section">Portfolio</a></li>
+              <li class="item-list">
+                <a href="#contact-section">Contact Me</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero">
+          <picture>
+            <source
+              srcset="./img/Home/tablet/Bitmap-tablet.png"
+              media="(max-width: 1400px)"
+            />
+            <img
+              src="./img/Home/Bitmap.png"
+              srcset="./img/Home/Bitmap@2x.png 2x"
+              alt="Hero illustration"
+              loading="lazy"
+            />
+          </picture>
+          <div class="content-hero">
+            <h1>
+              Hey, I’m Alex Spencer and I love building beautiful websites
+            </h1>
+            <a href="#about-section" class="btn-primary">About Me</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="about-section" id="about-section">
+          <picture class="photo-about-section">
+            <source
+              srcset="./img/Home/Bitmap-1.png"
+              media="(min-width: 1400px)"
+            />
+            <source
+              srcset="./img/Home/tablet/Bitmap2-tablet.png"
+              media="(min-width: 740px)"
+            />
+            <source
+              srcset="./img/Home/Bitmap-1.png"
+              media="(max-width: 739px)"
+            />
+            <img
+              src="./img/Home/Bitmap-1.png"
+              srcset="./img/Home/Bitmap-1@2x.png 2x"
+              alt="Profile photo"
+              loading="lazy"
+            />
+          </picture>
+          <div class="about-section-content">
+            <h2>About Me</h2>
+            <p class="p1">
+              I’m a junior front-end developer looking for a new role in an
+              exciting company. I focus on writing accessible HTML, using modern
+              CSS practices and writing clean JavaScript. When writing
+              JavaScript code, I mostly use React, but I can adapt to whatever
+              tools are required. I’m based in London, UK, but I’m happy working
+              remotely and have experience in remote teams. When I’m not coding,
+              you’ll find me outdoors. I love being out in nature whether that’s
+              going for a walk, run or cycling. I’d love you to check out my
+              work.
+            </p>
+            <a href="./portfolio.html" class="btn-secondary">Go to portfolio</a>
+          </div>
+        </section>
+        <section class="contact-section" id="contact-section">
+          <h2>
+            Interested in doing<br />
+            a project together?
+          </h2>
+          <a href="./contact.html" class="btn-secondary">Contact me</a>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <figure>
+            <img src="./img/Home/Combined-Shape-2.svg" alt="Logo" />
+          </figure>
+        </div>
+        <ul class="footer-menu-list">
+          <li class="footer-item-list"><a href="./index.html">Home</a></li>
+          <li class="footer-item-list">
+            <a href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="footer-item-list">
+            <a href="./contact.html">Contact Me</a>
+          </li>
+        </ul>
+        <div class="social-networks">
+          <a href="https://github.com/" target="_blank">
+            <img src="./img/Home/Path.svg" alt="Link GitHub" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="./img/Home/Path-1.svg" alt="Link Twitter" />
+          </a>
+          <a href="https://fr.linkedin.com/" target="_blank">
+            <img src="./img/Home/Shape.svg" alt="Link Linkedin" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
